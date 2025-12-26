@@ -1,0 +1,71 @@
+/* Simple, clean, responsive styles for a personal homepage */
+
+/* Accessibility: skip link */
+.skip-link{position:absolute;left:0;top:0;background:#111827;color:var(--text);padding:0.5rem 1rem;border-radius:0 0 6px 0;margin:0 0 0 1rem;transform:translateY(-120%);transition:transform .18s ease}
+.skip-link:focus{transform:none;outline:3px solid rgba(34,197,94,0.2)}
+
+:root{
+  --bg:#0f1720;
+  --surface:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#22c55e;
+  --text:#e6eef6;
+  --container:1200px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:linear-gradient(180deg,#071021 0%, #0b1220 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+}
+.site-header{
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  padding:1rem 0;
+}
+.site-title{margin:0;font-weight:700}
+.site-nav{display:flex;gap:1rem;align-items:center}
+.site-nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:0.95rem}
+.site-nav a:hover{color:var(--text)}
+
+.main-content{padding:2.5rem 0}
+.hero{padding:3rem 0}
+.hero-title{margin:0;font-size:2.25rem}
+.hero-sub{margin:0.5rem 0 0;color:var(--muted);max-width:60ch}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1.25rem; margin-bottom:1rem; border-radius:8px}
+.card h3{margin-top:0}
+
+/* Blog list */
+.post-list{list-style:none;padding:0;margin:0}
+.post-item{padding:0.5rem 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+.post-item:last-child{border-bottom:0}
+.post-item a{font-weight:600;color:var(--text);text-decoration:none}
+.post-meta{margin:0.35rem 0 0;color:var(--muted);font-size:0.95rem}
+
+.site-footer{padding:1.25rem 0;border-top:1px solid rgba(255,255,255,0.03); color:var(--muted);font-size:0.95rem}
+
+/* Responsive layout */
+@media (min-width:760px){
+  .hero{display:flex;align-items:center;justify-content:space-between}
+  .hero-title{font-size:2.75rem}
+}
+
+@media (min-width:980px){
+  .site-nav{gap:1.5rem}
+}
+
+/* Utility */
+a{color:var(--accent)}
+
+/* Focus visible for accessibility */
+:focus{outline:2px solid rgba(34,197,94,0.18);outline-offset:3px}

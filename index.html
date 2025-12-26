@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <meta name="description" content="Akintola Rahmah — personal portfolio and homepage" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Akintola Rahmah" />
+    <meta property="og:description" content="Software developer focusing on front-end web and accessible user experiences." />
+    <meta name="twitter:card" content="summary" />
+    <title>Rahmat Akintola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page">
+      <header class="site-header">
+        <div class="container">
+          <h1 class="site-title">Akintola Rahmah</h1>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/mihrab34" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" role="main" class="container main-content">
+        <section class="hero">
+          <h2 class="hero-title">Hi, I'm Rahmat.</h2>
+          <p class="hero-sub">I build things with web technologies, write about code, and enjoy clean, accessible design.</p>
+        </section>
+
+        <section id="about" class="card">
+          <h3>About</h3>
+          <p>I work at the intersection of engineering, technical operations, and technology risk, helping teams build and operate reliable systems in complex, high‑impact environments. With 4+ years across software engineering, internal tooling, and technical program leadership, I improve platform reliability, strengthen controls, and translate technical detail into clear, actionable insights for decision‑makers.
+</p>
+        </section>
+
+        <section id="projects" class="card">
+          <h3>Projects</h3>
+          <ul>
+            <li><strong>Personal site</strong> — this site (simple, responsive, accessible). <a href="https://github.com/mihrab34/akintolarahmah.github.io" target="_blank" rel="noopener noreferrer">Source</a></li>
+            <li><strong>Project Name</strong> — short description. <a href="#" target="_blank" rel="noopener noreferrer">Repo</a></li>
+          </ul>
+        </section>
+
+        <section id="skills" class="card">
+          <h3>Skills</h3>
+          <p>HTML · CSS · JavaScript · React · Accessibility · UX</p>
+        </section>
+
+        <section id="blog" class="card">
+          <h3>Blog</h3>
+          <ul class="post-list">
+            <li class="post-item">
+              <a href="/blog/welcome.html">Welcome — building reliable systems</a>
+              <p class="post-meta">Dec 26, 2025 · Thoughts on reliability, operations, and technology risk.</p>
+            </li>
+          </ul>
+          <p><a href="/blog/">See all posts →</a></p>
+        </section>
+
+        <section id="contact" class="card">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:akintola@example.com">akintola@example.com</a></p>
+          <p>Or find me on <a href="https://github.com/mihrab34" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© <span id="year"></span> Akintola Rahmah. Built with ❤️.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Insert current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
